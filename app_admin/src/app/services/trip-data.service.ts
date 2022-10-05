@@ -21,7 +21,7 @@ export class TripDataService {
       .catch(this.handleError);
   }
 
-/*   public getTrip(tripCode: string): Promise<Trip[]> {
+  public getTrip(tripCode: string): Promise<Trip[]> {
     console.log("Inside TripDataService#getTrip(tripCode)");
     return this.http
       .get(this.tripUrl + tripCode)
@@ -47,7 +47,7 @@ export class TripDataService {
       .toPromise()
       .then((response) => response.json() as Trip[])
       .catch(this.handleError);
-  } */
+  }
 
   private handleError(error: any): Promise<any> {
     console.error("Something has gone wrong", error);
