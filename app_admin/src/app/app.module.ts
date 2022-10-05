@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -16,7 +16,7 @@ import { TripDataService } from './services/trip-data.service';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
+    HttpModule,
     ReactiveFormsModule
   ],
   providers: [
